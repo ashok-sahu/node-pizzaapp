@@ -6,6 +6,7 @@ const app = express();
 
 const PORT = process.env.PORT || 4000;
 
+app.use(express.static('public'))
 app.get("/", (req, res) => {
   res.render("home");
 });
